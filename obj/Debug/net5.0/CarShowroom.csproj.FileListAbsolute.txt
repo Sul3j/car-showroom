@@ -143,3 +143,9 @@ C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\obj\Debug\net5.0\Razor\Views\
 C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\obj\Debug\net5.0\CarShowroom.RazorTargetAssemblyInfo.cs
 C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\obj\Debug\net5.0\CarShowroom.Views.pdb
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\angular.json
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\package-lock.json
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\package.json
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\tsconfig.app.json
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\tsconfig.json
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\tsconfig.spec.json
