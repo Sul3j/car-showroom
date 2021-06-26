@@ -149,3 +149,7 @@ C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\pa
 C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\tsconfig.app.json
 C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\tsconfig.json
 C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\ClientApp\tsconfig.spec.json
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\Szymo\OneDrive\Pulpit\Project\CarShowroom\obj\Debug\net5.0\CarShowroom.MvcApplicationPartsAssemblyInfo.cs
