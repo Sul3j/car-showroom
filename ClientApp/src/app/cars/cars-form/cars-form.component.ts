@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { Cars } from 'src/app/shared/cars.model';
 import { CarsService } from 'src/app/shared/cars.service';
 
@@ -11,7 +12,7 @@ import { CarsService } from 'src/app/shared/cars.service';
 })
 export class CarsFormComponent implements OnInit {
 
-  constructor(public service: CarsService) { }
+  constructor(public service: CarsService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
   }
@@ -20,6 +21,7 @@ export class CarsFormComponent implements OnInit {
     this.service.postCars().subscribe(
       res => {
         this.resetForm(form);
+        this.toastr.success('Submittes successfully', 'Car Register');
       },
       err => { console.log(err); }
     );
