@@ -9,10 +9,17 @@ export class CarsService {
 
   constructor(private http: HttpClient) { }
 
-  formData: Cars = new Cars();
   readonly baseURL = 'https://localhost:44382/api/Car';
+  formData: Cars = new Cars();
+  list: Cars[];
 
   postCars() {
     return this.http.post(this.baseURL, this.formData);
+  }
+
+  refreshList(){
+    this.http.get(this.baseURL)
+    .toPromise()
+    .then(res => this.list = res as Cars[]);
   }
 }
