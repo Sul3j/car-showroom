@@ -3,7 +3,7 @@ export class Cars {
     mark: string="";
     model:string="";
     productionDate: string="";
-    VIN: string="";
+    vin: string="";
     carRegistration: string="";
     carPower: string="";
 }

@@ -53,14 +53,14 @@
             <input 
             type="text" 
             class="form-control form-control-lg" 
-            placeholder="Car VIN number" 
-            name="VIN" 
-            #VIN="ngModel" 
-            [(ngModel)]="service.formData.VIN"
+            placeholder="Car vin number" 
+            name="vin" 
+            #vin="ngModel" 
+            [(ngModel)]="service.formData.vin"
             required
             minlength="17"
             maxlength="17"
-            [class.invalid]="VIN.invalid && VIN.touched"
+            [class.invalid]="vin.invalid && vin.touched"
             >
         </div>
     </div>
