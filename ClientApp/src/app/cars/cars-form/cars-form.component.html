@@ -1,4 +1,4 @@
-<form novalidate class="form-style">
+<form novalidate class="form-style" #form="ngForm" (submit)="onSubmit(form)">
     <input type="hidden" name="carId" [value]="service.formData.carId" />
     <div class="form-row d-flex justify-content-around">
         <div class="form-group py-1 pt-4 col-md-5">
@@ -10,6 +10,10 @@
             name="mark" 
             #mark="ngModel" 
             [(ngModel)]="service.formData.mark"
+            required
+            minlength="3"
+            maxlength="20"
+            [class.invalid]="mark.invalid && mark.touched"
             >
         </div>
         <div class="form-group py-1 pt-4 col-md-5">
@@ -21,19 +25,27 @@
             name="model" 
             #model="ngModel" 
             [(ngModel)]="service.formData.model"
+            required
+            minlength="3"
+            maxlength="20"
+            [class.invalid]="model.invalid && model.touched"
             >
         </div>
     </div>
     <div class="form-row d-flex justify-content-around">
         <div class="form-group py-1 col-md-5">
-            <label>PRODUCTION DATE</label>
+            <label>PRODUCTION YEAR</label>
             <input 
             type="text" 
             class="form-control form-control-lg" 
-            placeholder="Car production date" 
+            placeholder="Car production year" 
             name="productionDate" 
             #productionDate="ngModel" 
             [(ngModel)]="service.formData.productionDate"
+            required
+            minlength="4"
+            maxlength="4"
+            [class.invalid]="productionDate.invalid && productionDate.touched"
             >
         </div>
         <div class="form-group py-1 col-md-5">
@@ -45,6 +57,10 @@
             name="VIN" 
             #VIN="ngModel" 
             [(ngModel)]="service.formData.VIN"
+            required
+            minlength="17"
+            maxlength="17"
+            [class.invalid]="VIN.invalid && VIN.touched"
             >
         </div>
     </div>
@@ -58,6 +74,10 @@
             name="carRegistration" 
             #carRegistration="ngModel" 
             [(ngModel)]="service.formData.carRegistration"
+            required
+            minlength="6"
+            maxlength="10"
+            [class.invalid]="carRegistration.invalid && carRegistration.touched"
             >
         </div>
         <div class="form-group py-1 col-md-5">
@@ -69,10 +89,14 @@
             name="carPower" 
             #carPower="ngModel" 
             [(ngModel)]="service.formData.carPower"
+            required
+            minlength="2"
+            maxlength="4"
+            [class.invalid]="carPower.invalid && carPower.touched"
             >
         </div>
     </div>
     <div class="form-group d-flex justify-content-around p-3 submit bg-dark">
-        <button class="btn btn-secondary btn-lg btn-block col-md-6" type="submit">SUBMIT</button>
+        <button class="btn btn-secondary btn-lg btn-block col-md-6" type="submit" [disabled]="form.invalid">SUBMIT</button>
     </div>
 </form>
