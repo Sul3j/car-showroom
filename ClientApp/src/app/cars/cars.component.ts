@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cars } from '../shared/cars.model';
 import { CarsService } from '../shared/cars.service';
 
 @Component({
@@ -13,6 +14,10 @@ export class CarsComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.refreshList();
+  }
+
+  populateForm(selectedRecord: Cars){
+    this.service.formData = selectedRecord;
   }
 
 }
