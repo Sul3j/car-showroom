@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CarsComponent } from './cars/cars.component';
-import { CarsFormComponent } from './Cars/cars-form/cars-form.component';
+import { CarsFormComponent } from './cars/cars-form/cars-form.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { CarsFormComponent } from './Cars/cars-form/cars-form.component';
     CarsFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

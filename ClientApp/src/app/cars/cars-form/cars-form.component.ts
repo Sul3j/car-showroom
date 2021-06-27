@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarsService } from 'src/app/shared/cars.service';
 
 @Component({
   selector: 'app-cars-form',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: CarsService) { }
 
   ngOnInit(): void {
   }

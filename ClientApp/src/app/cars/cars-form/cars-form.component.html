@@ -1,1 +1,78 @@
-<p>cars-form works!</p>
+<form novalidate class="form-style">
+    <input type="hidden" name="carId" [value]="service.formData.carId" />
+    <div class="form-row d-flex justify-content-around">
+        <div class="form-group py-1 pt-4 col-md-5">
+            <label>CAR MARK</label>
+            <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            placeholder="Car brand name" 
+            name="mark" 
+            #mark="ngModel" 
+            [(ngModel)]="service.formData.mark"
+            >
+        </div>
+        <div class="form-group py-1 pt-4 col-md-5">
+            <label>CAR MODEL</label>
+            <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            placeholder="Car model name" 
+            name="model" 
+            #model="ngModel" 
+            [(ngModel)]="service.formData.model"
+            >
+        </div>
+    </div>
+    <div class="form-row d-flex justify-content-around">
+        <div class="form-group py-1 col-md-5">
+            <label>PRODUCTION DATE</label>
+            <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            placeholder="Car production date" 
+            name="productionDate" 
+            #productionDate="ngModel" 
+            [(ngModel)]="service.formData.productionDate"
+            >
+        </div>
+        <div class="form-group py-1 col-md-5">
+            <label>VIN</label>
+            <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            placeholder="Car VIN number" 
+            name="VIN" 
+            #VIN="ngModel" 
+            [(ngModel)]="service.formData.VIN"
+            >
+        </div>
+    </div>
+    <div class="form-row d-flex justify-content-around mb-4">
+        <div class="form-group py-1 col-md-5">
+            <label>REGISTRATION</label>
+            <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            placeholder="Car registration" 
+            name="carRegistration" 
+            #carRegistration="ngModel" 
+            [(ngModel)]="service.formData.carRegistration"
+            >
+        </div>
+        <div class="form-group py-1 col-md-5">
+            <label>POWER</label>
+            <input 
+            type="text" 
+            class="form-control form-control-lg" 
+            placeholder="Car power" 
+            name="carPower" 
+            #carPower="ngModel" 
+            [(ngModel)]="service.formData.carPower"
+            >
+        </div>
+    </div>
+    <div class="form-group d-flex justify-content-around p-3 submit bg-dark">
+        <button class="btn btn-secondary btn-lg btn-block col-md-6" type="submit">SUBMIT</button>
+    </div>
+</form>
