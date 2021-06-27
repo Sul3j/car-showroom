@@ -18,7 +18,7 @@ namespace CarShowroom.Models
         [Column(TypeName = "nvarchar(20)")]
         public string Model { get; set; }
 
-        [Column(TypeName = "nvarchar(10)")]
+        [Column(TypeName = "nvarchar(4)")]
         public string ProductionDate { get; set; }
 
         [Column(TypeName = "nvarchar(17)")]
