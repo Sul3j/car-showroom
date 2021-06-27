@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Cars } from 'src/app/shared/cars.model';
 import { CarsService } from 'src/app/shared/cars.service';
 
 @Component({
@@ -18,10 +19,15 @@ export class CarsFormComponent implements OnInit {
   onSubmit(form: NgForm){
     this.service.postCars().subscribe(
       res => {
-
+        this.resetForm(form);
       },
       err => { console.log(err); }
     );
+  }
+
+  resetForm(form: NgForm){
+    form.form.reset();
+    this.service.formData = new Cars();
   }
 
 }
