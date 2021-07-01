@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Cars } from '../shared/cars.model';
 import { CarsService } from '../shared/cars.service';
 
@@ -10,7 +11,7 @@ import { CarsService } from '../shared/cars.service';
 })
 export class CarsComponent implements OnInit {
 
-  constructor(public service: CarsService) { }
+  constructor(public service: CarsService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.service.refreshList();
@@ -18,6 +19,20 @@ export class CarsComponent implements OnInit {
 
   populateForm(selectedRecord: Cars){
     this.service.formData = Object.assign({}, selectedRecord);
+  }
+
+  onDelete(id: number){
+    if(confirm('Are you sure to delete this record?'))
+    {
+      this.service.deleteCars(id)
+      .subscribe(
+        res => {
+          this.service.refreshList();
+          this.toastr.error("Deleted successfully", 'Cars Register');
+        },
+        err => {console.log(err)}
+      )
+    }
   }
 
 }

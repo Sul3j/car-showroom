@@ -21,6 +21,10 @@ export class CarsService {
     return this.http.put(`${this.baseURL}/${this.formData.carId}`, this.formData);
   }
 
+  deleteCars(id: number){
+    return this.http.delete(`${this.baseURL}/${id}`);
+  }
+
   refreshList(){
     this.http.get(this.baseURL)
     .toPromise()

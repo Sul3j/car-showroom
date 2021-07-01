@@ -28,6 +28,7 @@ export class CarsFormComponent implements OnInit {
     this.service.postCars().subscribe(
       res => {
         this.resetForm(form);
+        this.service.refreshList();
         this.toastr.success('Submittes successfully', 'Car Register');
       },
       err => { console.log(err); }
@@ -38,6 +39,7 @@ export class CarsFormComponent implements OnInit {
     this.service.putCars().subscribe(
       res => {
         this.resetForm(form);
+        this.service.refreshList();
         this.toastr.info('Updated successfully', 'Car Register');
       },
       err => { console.log(err); }
