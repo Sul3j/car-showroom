@@ -7486,11 +7486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\Project\\CarShowroom\\CarShowroom.csproj",
+      "projectUniqueName": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\projekt-api\\crud-fulstack-app\\CarShowroom.csproj",
       "projectName": "CarShowroom",
-      "projectPath": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\Project\\CarShowroom\\CarShowroom.csproj",
+      "projectPath": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\projekt-api\\crud-fulstack-app\\CarShowroom.csproj",
       "packagesPath": "C:\\Users\\Szymo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\Project\\CarShowroom\\obj\\",
+      "outputPath": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\projekt-api\\crud-fulstack-app\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Szymo\\AppData\\Roaming\\NuGet\\NuGet.Config",

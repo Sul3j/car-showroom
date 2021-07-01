@@ -17,7 +17,7 @@ export class CarsComponent implements OnInit {
   }
 
   populateForm(selectedRecord: Cars){
-    this.service.formData = selectedRecord;
+    this.service.formData = Object.assign({}, selectedRecord);
   }
 
 }

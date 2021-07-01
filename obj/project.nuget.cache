@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C/0GtNR09jIRwFiUe4nSTykQr23ZLAFoTRHTVBm8JUSRsv/SBQKRHq6YQKZ6LwJuX3vL+NuauMRp9fNeU4SEUQ==",
+  "dgSpecHash": "PRWS1vP0HYD7QDHTjftRJGcuwZ22Pfkc+tmHOFzWQaDIjNke41j8IH6ZLmpyHsHOXlp1DCCcQ7reA7dhipH9ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\Project\\CarShowroom\\CarShowroom.csproj",
+  "projectFilePath": "C:\\Users\\Szymo\\OneDrive\\Pulpit\\projekt-api\\crud-fulstack-app\\CarShowroom.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Szymo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Szymo\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

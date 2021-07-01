@@ -17,6 +17,10 @@ export class CarsService {
     return this.http.post(this.baseURL, this.formData);
   }
 
+  putCars() {
+    return this.http.put(`${this.baseURL}/${this.formData.carId}`, this.formData);
+  }
+
   refreshList(){
     this.http.get(this.baseURL)
     .toPromise()
